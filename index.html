@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:400,700" rel="stylesheet" />
+    <link rel="stylesheet" href="warnabody.css" />
+    <title>Pengukur masa tubuh</title>
+  </head>
+  <body>
+    <h3><b>P</b>enghitung <b>B</b>erat <b>B</b>adan <b>M</b>anusia</h3>
+    <form class="form" id="form" onsubmit="return validateForm()">
+      <div class="row-one">
+        <input type="text" class="text-input" id="age" autocomplete="off" required />
+        <p class="text">Umur</p>
+        <label class="container">
+          <input type="radio" name="radio" id="f" />
+          <p class="text">Nisa</p>
+          <span class="checkmark"></span>
+        </label>
+        <label class="container">
+          <input type="radio" name="radio" id="m" />
+          <p class="text">Rijal</p>
+          <span class="checkmark"></span>
+        </label>
+      </div>
+
+      <div class="row-two">
+        <input type="text" class="text-input" id="height" autocomplete="off" required />
+        <p class="text">Tinggi(cm)</p>
+        <input type="text" class="text-input" id="weight" autocomplete="off" required />
+        <p class="text">Berat(kg)</p>
+      </div>
+      <button type="button" id="submit">Submit</button>
+    </form>
+    <form>
+      <footer class="bg-primary text-white text-center">
+        <p>Creatid with love By: <a href="https://www.instagram.com/bachrulgumilang/" class="text-white font-weight-bold">Bachrul Panji Gumilang</a></p>
+      </footer>
+    </form>
+  </body>
+  <script src="script.js"></script>
+</html>
